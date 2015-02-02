@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> About Us</title>
+	<link href="css/default.css" rel="stylesheet" />
+</head>
+<body>
+	<script language="JavaScript">
+		function showFAQ(form) {
+			form.answer.value = form.question.options[form.question.selectedIndex].value;
+		}
+	</script>
+	<img src="images/cooltext1902873350.png" />
+	<ul id="nav">
+		<li><a href="/Default.htm">Home</a></li>
+		<li><a href="/about.htm">About Us</a></li>
+		<li><a href="/Planes.htm">Our Planes</a></li>
+		<li><a href="/faqs.htm">FAQs</a></li>
+		<li><a href="/contact.htm">Contact</a></li>
+		<li><a href="/Login.htm">Login</a></li>
+	</ul>     
+			<form name=faqform>
+			<table border=1 cellspacing=0 cellpadding=5>
+				<tr bgcolor="#1B62A9">
+					<td align=left>
+						<font face="verdana,arial" size="4" color="#ffffff">
+							<b>What do you offer?</b>
+						</font>
+					</td>
+				</tr>
+				<tr bgcolor="#ffffcc">
+					<td>
+						<font face="verdana,arial" size="4">
+							<br>
+							Browse the Frequently Asked Questions below and click for the answer.
+							<p>
+								
+								<select size=4 name=question onchange="javascript:showFAQ(this.form);">
+									<option value="We have 12 planes and you can see these on our planes page.">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;How many planes do you have?
+									<option value="We love planes.">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;Why do you do this?
+									<option value="500 miles.">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;What's the farthest you have flown?
+									<option value="Yes you surely can. ">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;Can I rent a pilot and a plane?
+								</select>
+
+							<p>
+								Answer:
+							<p>
+
+								<textarea name="answer" rows=15 cols=50 wrap="soft"></textarea>
+
+						</font>
+					</td>
+				</tr>
+			</table>
+		</form>
+	
+</body>
+</html>
